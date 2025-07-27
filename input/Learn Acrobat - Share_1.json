@@ -1,0 +1,149 @@
+{
+  "title": "PDF sharing options",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Share",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Add name or email to invite",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Share a link to the file",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Send an anonymous or public link in an email",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Mark up text",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Highlight, strikethrough, or underline text comment",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Using Select Text Tool",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Using Markup Tool",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Change the color of the markup",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Delete The Markup",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Add a comment to the markup",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Replace text",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Insert text",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "Export text edits",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Share a PDF for review",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Send an anonymous or public link in an email",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Reviewer experience",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Send personalized invitations for commenting",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "4. Enter a message to the recipients (optional).",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Initiate a review using @mention in a PDF",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Reviewer experience",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Hosting a shared review on SharePoint or Office 365",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "download all the latest changes. Reviewers are notified of new comments as they are added, and they can see and reply to comments made by other reviewers.",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "Initiate SharePoint-based shared review using Acrobat",
+      "page": 14
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 1058.0078125,
+      "vms_mb": 4126.75390625,
+      "percent": 9.137031178365513
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Learn Acrobat - Share_1.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T20:18:33.788644",
+  "processing_time_seconds": 1.26
+}

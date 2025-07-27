@@ -1,0 +1,34 @@
+{
+  "title": "Copy images",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Export objects to separate PDF",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Take a snapshot of a page",
+      "page": 3
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 1054.625,
+      "vms_mb": 4133.65625,
+      "percent": 9.10822135792761
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Learn Acrobat - Export_2.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T20:18:23.795986",
+  "processing_time_seconds": 0.57
+}

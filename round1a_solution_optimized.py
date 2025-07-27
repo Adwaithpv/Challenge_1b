@@ -110,66 +110,12 @@ class OptimizedPDFProcessor:
     def parallel_extract_table_of_contents(self, file: bytes, segment_boxes: List[Dict], 
                                           skip_document_name: bool = False) -> List[Dict]:
         """
-        Optimized TOC extraction with parallel processing.
+        Enhanced TOC extraction with parallel processing and improved heading detection.
         """
-        import tempfile
-        import uuid
-        from pathlib import Path
-        from pdf_features.PdfFeatures import PdfFeatures
-        from fast_trainer.PdfSegment import PdfSegment
-        from pdf_features.Rectangle import Rectangle
-        from pdf_token_type_labels.TokenType import TokenType
-        from toc.TOCExtractor import TOCExtractor
-        from toc.PdfSegmentation import PdfSegmentation
+        # Use the enhanced TOC extraction that can recognize headings in Text segments
+        from toc.extract_table_of_contents_enhanced import extract_table_of_contents_enhanced
         
-        # Create temporary PDF file
-        file_id = str(uuid.uuid1())
-        pdf_path = Path(tempfile.gettempdir()) / f"{file_id}.pdf"
-        pdf_path.write_bytes(file)
-        
-        try:
-            # Process PDF features and segments in parallel
-            with ThreadPoolExecutor(max_workers=2) as executor:
-                # Extract PDF features
-                pdf_features_future = executor.submit(PdfFeatures.from_pdf_path, pdf_path)
-                
-                # Process segment boxes
-                segments_future = executor.submit(self._process_segment_boxes, segment_boxes)
-                
-                # Wait for both
-                pdf_features = pdf_features_future.result()
-                processed_segments = segments_future.result()
-            
-            # Create PDF segments
-            pdf_segments = []
-            TITLE_TYPES = {TokenType.TITLE, TokenType.SECTION_HEADER}
-            
-            for segment_data in processed_segments:
-                left, top, width, height = segment_data["left"], segment_data["top"], segment_data["width"], segment_data["height"]
-                bounding_box = Rectangle.from_width_height(left, top, width, height)
-                segment_type = TokenType.from_value(segment_data["type"])
-                pdf_name = pdf_features.file_name
-                segment = PdfSegment(segment_data["page_number"], bounding_box, segment_data["text"], segment_type, pdf_name)
-                pdf_segments.append(segment)
-            
-            # Filter title segments
-            title_segments = [segment for segment in pdf_segments if segment.segment_type in TITLE_TYPES]
-            
-            if skip_document_name:
-                self._skip_document_name(pdf_segments, title_segments)
-            
-            # Extract TOC
-            pdf_segmentation = PdfSegmentation(pdf_features, title_segments)
-            toc_instance = TOCExtractor(pdf_segmentation)
-            
-            return toc_instance.to_dict()
-            
-        finally:
-            # Cleanup
-            try:
-                pdf_path.unlink()
-            except FileNotFoundError:
-                pass
+        return extract_table_of_contents_enhanced(file, segment_boxes, skip_document_name)
     
     def _process_segment_boxes(self, segment_boxes: List[Dict]) -> List[Dict]:
         """Process segment boxes in parallel chunks."""

@@ -1,0 +1,34 @@
+{
+  "title": "Export Expert: Test Your Acrobat Exporting Skills",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Welcome to the ultimate test of your Acrobat exporting skills! Think you know everything about saving, converting, and exporting PDFs? It's time to put your knowledge to the test.",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Dive into real-world scenarios, answer intriguing questions, and see if you have what it takes to be a true PDF exporting pro",
+      "page": 1
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 1058.03125,
+      "vms_mb": 4134.7578125,
+      "percent": 9.137301059587411
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Test Your Acrobat Exporting Skills.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T20:18:35.639676",
+  "processing_time_seconds": 0.47
+}

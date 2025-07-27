@@ -1,9 +1,25 @@
 #!/usr/bin/env python3
 """
-Docker entrypoint script for the Adobe India Hackathon Round 1A solution.
+Docker entrypoint script for Adobe India Hackathon Round 1B: Persona-Driven Document Intelligence
 
-This script automatically processes all PDF files from /app/input directory
-and generates corresponding filename.json files in /app/output directory.
+This script uses the round1b_solution.py module to process PDF documents and generate
+intelligent, persona-driven analysis with ranked sections and refined text summaries.
+
+PREFERRED INPUT FORMAT (Round 1B JSON):
+/app/input/
+  - input.json (contains challenge info, documents, persona, job_to_be_done)
+  - PDFs/ (subdirectory with PDF files)
+
+LEGACY INPUT FORMAT (backwards compatibility):
+/app/input/
+  - document1.pdf + document1.json (Round 1A output)
+  - document2.pdf + document2.json (Round 1A output)
+  - persona.txt (user persona)
+  - job.txt (job-to-be-done)
+
+OUTPUT:
+/app/output/
+  - output.json (Round 1B format: metadata, extracted_sections, subsection_analysis)
 """
 
 import os
@@ -11,7 +27,7 @@ import sys
 import json
 import time
 from pathlib import Path
-from typing import List
+from typing import List, Tuple
 
 # Add src to path for imports
 sys.path.append('/app/src')
@@ -21,159 +37,216 @@ sys.path.append('/app')
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
-from round1a_solution_optimized import OptimizedRound1ASolutionEngine
-from post_process_output import JSONPostProcessor
+from round1b_solution import Round1BDocumentIntelligence
 
 
-def find_pdf_files(input_dir: Path) -> List[Path]:
-    """Find all PDF files in the input directory."""
-    pdf_files = []
+def find_pdf_json_pairs(input_dir: Path) -> List[Tuple[Path, Path]]:
+    """Find all PDF files and their corresponding Round 1A JSON files."""
+    pairs = []
     
     if not input_dir.exists():
         print(f"⚠️  Input directory does not exist: {input_dir}")
-        return pdf_files
+        return pairs
     
+    # Find all PDF files
+    pdf_files = []
     for file_path in input_dir.iterdir():
         if file_path.is_file() and file_path.suffix.lower() == '.pdf':
             pdf_files.append(file_path)
     
-    return sorted(pdf_files)
+    # Find corresponding JSON files
+    for pdf_path in pdf_files:
+        json_path = input_dir / f"{pdf_path.stem}.json"
+        if json_path.exists():
+            pairs.append((pdf_path, json_path))
+        else:
+            print(f"⚠️  Warning: No Round 1A JSON found for {pdf_path.name}")
+    
+    return sorted(pairs)
 
 
-def process_pdf_file(pdf_path: Path, output_dir: Path, engine: OptimizedRound1ASolutionEngine, 
-                    processor: JSONPostProcessor) -> bool:
-    """Process a single PDF file and save the JSON output."""
+def read_persona_and_job(input_dir: Path) -> Tuple[str, str]:
+    """Read persona and job-to-be-done from input files."""
+    persona_file = input_dir / "persona.txt"
+    job_file = input_dir / "job.txt"
+    
+    # Default values if files don't exist
+    default_persona = "Research Analyst"
+    default_job = "analyze key information and trends"
+    
+    # Read persona
     try:
-        # Generate output filename
-        output_filename = pdf_path.stem + '.json'
-        output_path = output_dir / output_filename
+        if persona_file.exists():
+            persona = persona_file.read_text(encoding='utf-8').strip()
+            if not persona:
+                persona = default_persona
+        else:
+            print(f"⚠️  persona.txt not found, using default: '{default_persona}'")
+            persona = default_persona
+    except Exception as e:
+        print(f"⚠️  Error reading persona.txt: {e}, using default: '{default_persona}'")
+        persona = default_persona
+    
+    # Read job
+    try:
+        if job_file.exists():
+            job = job_file.read_text(encoding='utf-8').strip()
+            if not job:
+                job = default_job
+        else:
+            print(f"⚠️  job.txt not found, using default: '{default_job}'")
+            job = default_job
+    except Exception as e:
+        print(f"⚠️  Error reading job.txt: {e}, using default: '{default_job}'")
+        job = default_job
+    
+    return persona, job
+
+
+def process_round1b(input_dir: Path, output_dir: Path) -> bool:
+    """Process Round 1B document intelligence pipeline."""
+    try:
+        print("🚀 Starting Round 1B: Persona-Driven Document Intelligence")
+        print("=" * 60)
         
-        print(f"📄 Processing: {pdf_path.name}")
         start_time = time.time()
         
-        # Extract document structure
-        result = engine.extract_document_structure(str(pdf_path))
+        # Check for input.json (REQUIRED FORMAT)
+        input_json_path = input_dir / "input.json"
         
-        # Post-process and validate JSON
-        processed_result = processor.validate_and_fix_structure(result)
+        if input_json_path.exists():
+            print(f"📄 Found input.json - using required JSON format")
+            
+            # Initialize Round 1B system
+            print("🧠 Initializing Document Intelligence System...")
+            system = Round1BDocumentIntelligence(model_cache_dir='/app/models')
+            
+            # Process documents from JSON
+            print("⚡ Processing documents...")
+            result = system.process_documents_from_input_json(str(input_json_path))
+            
+        else:
+            print("⚠️  No input.json found - falling back to legacy format")
+            
+            # Find PDF and JSON pairs (LEGACY SUPPORT)
+            pdf_json_pairs = find_pdf_json_pairs(input_dir)
+            
+            if not pdf_json_pairs:
+                print("❌ No PDF-JSON pairs found in input directory")
+                return False
+            
+            print(f"📁 Found {len(pdf_json_pairs)} document pairs:")
+            for pdf_path, json_path in pdf_json_pairs:
+                print(f"   • {pdf_path.name} + {json_path.name}")
+            
+            # Read persona and job (LEGACY)
+            persona, job = read_persona_and_job(input_dir)
+            print(f"👤 Persona: {persona}")
+            print(f"🎯 Job-to-be-Done: {job}")
+            print()
+            
+            # Extract paths for processing
+            pdf_paths = [str(pdf) for pdf, _ in pdf_json_pairs]
+            json_paths = [str(json) for _, json in pdf_json_pairs]
+            
+            # Initialize Round 1B system
+            print("🧠 Initializing Document Intelligence System...")
+            system = Round1BDocumentIntelligence(model_cache_dir='/app/models')
+            
+            # Process documents
+            print("⚡ Processing documents...")
+            result = system.process_documents(
+                pdf_paths=pdf_paths,
+                json_paths=json_paths,
+                persona=persona,
+                job=job
+            )
         
-        # Format JSON with proper indentation
-        json_output = processor.format_json(processed_result, indent=2)
+        # Save output (Round 1B format)
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_path = output_dir / 'output.json'
         
-        # Save to output file
-        output_path.write_text(json_output, encoding='utf-8')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
         
+        # Print summary
         processing_time = time.time() - start_time
-        print(f"✅ Completed: {pdf_path.name} → {output_filename} ({processing_time:.2f}s)")
+        print()
+        print("✅ Round 1B Processing Completed Successfully!")
+        print("=" * 60)
+        print(f"📊 Summary:")
+        print(f"   • Documents processed: {len(result['metadata']['input_documents'])}")
+        print(f"   • Total sections analyzed: {len(result['extracted_sections'])}")
+        print(f"   • Sections with refined text: {len(result['subsection_analysis'])}")
+        print(f"   • Processing time: {processing_time:.2f}s")
+        print(f"   • Output saved to: {output_path}")
+        
+        # Performance check
+        if processing_time > 60:
+            print(f"⚠️  Warning: Processing time ({processing_time:.2f}s) exceeded 60s target")
+        else:
+            print(f"🎉 Performance target met: {processing_time:.2f}s < 60s")
+        
+        # Show top 3 most relevant sections
+        if result.get('extracted_sections'):
+            print(f"\n🏆 Top 3 Most Relevant Sections:")
+            for i, section in enumerate(result['extracted_sections'][:3]):
+                print(f"   {i+1}. '{section['section_title']}' (Rank: {section['importance_rank']})")
         
         return True
         
     except Exception as e:
-        print(f"❌ Error processing {pdf_path.name}: {e}")
+        print(f"❌ Error during Round 1B processing: {e}")
         import traceback
         traceback.print_exc()
-        
-        # Create error output file
-        error_output = {
-            "title": "",
-            "outline": [],
-            "error": str(e),
-            "file": pdf_path.name
-        }
-        
-        try:
-            output_filename = pdf_path.stem + '.json'
-            output_path = output_dir / output_filename
-            output_path.write_text(json.dumps(error_output, indent=2), encoding='utf-8')
-        except:
-            pass
-        
         return False
 
 
 def main():
     """Main entrypoint for Docker container."""
-    print("🚀 Adobe India Hackathon - Round 1A PDF Processing Container")
+    print("🐳 Adobe India Hackathon - Round 1B Docker Container")
+    print("🧠 Persona-Driven Document Intelligence (using round1b_solution.py)")
     print("=" * 60)
     
-    # Set up directories
+    # Define input and output directories
     input_dir = Path("/app/input")
     output_dir = Path("/app/output")
     
-    # Ensure output directory exists
+    # Validate input directory
+    if not input_dir.exists():
+        print(f"❌ Input directory not found: {input_dir}")
+        print("💡 Please mount your input directory to /app/input")
+        return 1
+    
+    # Create output directory
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    print(f"📁 Input directory: {input_dir}")
-    print(f"📁 Output directory: {output_dir}")
+    # Check for basic input files
+    pdf_files = list(input_dir.glob("*.pdf"))
+    json_files = list(input_dir.glob("*.json"))
     
-    # Find all PDF files
-    pdf_files = find_pdf_files(input_dir)
+    print(f"📁 Input directory: {input_dir}")
+    print(f"📂 Found {len(pdf_files)} PDF files and {len(json_files)} JSON files")
     
     if not pdf_files:
-        print(f"⚠️  No PDF files found in {input_dir}")
-        print("💡 Make sure PDF files are mounted to /app/input")
-        return
-    
-    print(f"📊 Found {len(pdf_files)} PDF file(s) to process:")
-    for pdf_file in pdf_files:
-        print(f"   • {pdf_file.name}")
-    
-    print("\n" + "=" * 60)
-    print("🔄 Starting PDF processing...")
-    print("=" * 60)
-    
-    # Initialize processing engine and post-processor
-    try:
-        engine = OptimizedRound1ASolutionEngine(
-            max_workers=None,  # Auto-detect optimal workers
-            enable_memory_optimization=True
-        )
-        processor = JSONPostProcessor()
+        print("❌ No PDF files found in input directory")
+        return 1
         
-        print("✅ Processing engine initialized successfully")
-        
-    except Exception as e:
-        print(f"❌ Failed to initialize processing engine: {e}")
-        sys.exit(1)
+    if not json_files:
+        print("❌ No JSON files found in input directory")
+        print("💡 Make sure you have Round 1A JSON outputs for your PDFs")
+        return 1
     
-    # Process each PDF file
-    total_start_time = time.time()
-    successful_count = 0
-    failed_count = 0
+    # Process Round 1B
+    success = process_round1b(input_dir, output_dir)
     
-    for pdf_file in pdf_files:
-        success = process_pdf_file(pdf_file, output_dir, engine, processor)
-        if success:
-            successful_count += 1
-        else:
-            failed_count += 1
-    
-    # Print summary
-    total_time = time.time() - total_start_time
-    print("\n" + "=" * 60)
-    print("📋 PROCESSING SUMMARY")
-    print("=" * 60)
-    print(f"Total files: {len(pdf_files)}")
-    print(f"✅ Successful: {successful_count}")
-    print(f"❌ Failed: {failed_count}")
-    print(f"⏱️  Total time: {total_time:.2f}s")
-    print(f"📊 Average time per file: {total_time / len(pdf_files):.2f}s")
-    
-    # List output files
-    output_files = list(output_dir.glob("*.json"))
-    if output_files:
-        print(f"\n📄 Generated output files:")
-        for output_file in sorted(output_files):
-            print(f"   • {output_file.name}")
-    
-    print(f"\n🎯 Processing completed! Results saved to {output_dir}")
-    
-    # Exit with appropriate code
-    if failed_count > 0:
-        sys.exit(1)  # Some files failed
+    if success:
+        print("\n🎉 Docker container execution completed successfully!")
+        return 0
     else:
-        sys.exit(0)  # All files processed successfully
+        print("\n❌ Docker container execution failed!")
+        return 1
 
 
 if __name__ == "__main__":
-    main() 
+    sys.exit(main()) 

@@ -51,6 +51,7 @@ fastapi>=0.70.0
 sentence-transformers>=2.2.0
 bert-extractive-summarizer>=0.10.1
 scipy>=1.9.0
+tf-keras>=2.15.0  # Required for TensorFlow compatibility with summarizer
 
 # Note: torch, torchvision, and detectron2 are installed separately in Dockerfile
 # for optimal CPU compatibility 

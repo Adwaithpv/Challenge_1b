@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
 """
-Docker entrypoint script for the Adobe India Hackathon Round 1B solution.
+Docker entrypoint script for Adobe India Hackathon Round 1B: Persona-Driven Document Intelligence
 
-This script automatically processes PDF files and their corresponding Round 1A JSON files
-from /app/input directory using a specified persona and job-to-be-done, then generates
-persona-driven document intelligence output in /app/output directory.
+This script uses the round1b_solution.py module to process PDF documents and generate
+intelligent, persona-driven analysis with ranked sections and refined text summaries.
 
-Expected input structure:
+PREFERRED INPUT FORMAT (Round 1B JSON):
 /app/input/
-  - document1.pdf
-  - document1.json (Round 1A output)
-  - document2.pdf  
-  - document2.json (Round 1A output)
-  - ...
-  - persona.txt (contains the user persona)
-  - job.txt (contains the job-to-be-done)
+  - input.json (contains challenge info, documents, persona, job_to_be_done)
+  - PDFs/ (subdirectory with PDF files)
 
-Expected output:
+LEGACY INPUT FORMAT (backwards compatibility):
+/app/input/
+  - document1.pdf + document1.json (Round 1A output)
+  - document2.pdf + document2.json (Round 1A output)
+  - persona.txt (user persona)
+  - job.txt (job-to-be-done)
+
+OUTPUT:
 /app/output/
-  - round1b_output.json (ranked sections with refined text)
+  - output.json (Round 1B format: metadata, extracted_sections, subsection_analysis)
 """
 
 import os
@@ -47,13 +48,13 @@ def find_pdf_json_pairs(input_dir: Path) -> List[Tuple[Path, Path]]:
         print(f"⚠️  Input directory does not exist: {input_dir}")
         return pairs
     
-    # Find all PDF files
+    # Find all PDF files in root directory (legacy format)
     pdf_files = []
     for file_path in input_dir.iterdir():
         if file_path.is_file() and file_path.suffix.lower() == '.pdf':
             pdf_files.append(file_path)
     
-    # Find corresponding JSON files
+    # Find corresponding JSON files in the same directory
     for pdf_path in pdf_files:
         json_path = input_dir / f"{pdf_path.stem}.json"
         if json_path.exists():
@@ -161,7 +162,7 @@ def process_round1b(input_dir: Path, output_dir: Path) -> bool:
                 job=job
             )
         
-        # Save output
+        # Save output (Round 1B format)
         output_dir.mkdir(parents=True, exist_ok=True)
         output_path = output_dir / 'output.json'
         
@@ -204,7 +205,7 @@ def process_round1b(input_dir: Path, output_dir: Path) -> bool:
 def main():
     """Main entrypoint for Docker container."""
     print("🐳 Adobe India Hackathon - Round 1B Docker Container")
-    print("🧠 Persona-Driven Document Intelligence System")
+    print("🧠 Persona-Driven Document Intelligence (using round1b_solution.py)")
     print("=" * 60)
     
     # Define input and output directories
@@ -220,21 +221,41 @@ def main():
     # Create output directory
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    # Check for basic input files
-    pdf_files = list(input_dir.glob("*.pdf"))
+    # Check for input.json (PREFERRED Round 1B format)
+    input_json_path = input_dir / "input.json"
+    pdfs_subdir = input_dir / "PDFs"
+    
+    # Count files in different locations
+    pdf_files_root = list(input_dir.glob("*.pdf"))
+    pdf_files_subdir = list(pdfs_subdir.glob("*.pdf")) if pdfs_subdir.exists() else []
     json_files = list(input_dir.glob("*.json"))
     
-    print(f"📁 Input directory: {input_dir}")
-    print(f"📂 Found {len(pdf_files)} PDF files and {len(json_files)} JSON files")
+    total_pdfs = len(pdf_files_root) + len(pdf_files_subdir)
     
-    if not pdf_files:
-        print("❌ No PDF files found in input directory")
-        return 1
-        
-    if not json_files:
-        print("❌ No JSON files found in input directory")
-        print("💡 Make sure you have Round 1A JSON outputs for your PDFs")
-        return 1
+    print(f"📁 Input directory: {input_dir}")
+    print(f"📂 Found {len(pdf_files_root)} PDF files in root, {len(pdf_files_subdir)} in PDFs/, {len(json_files)} JSON files")
+    
+    # Check for Round 1B JSON format first (preferred)
+    if input_json_path.exists():
+        print("✅ Found input.json - Round 1B JSON format detected")
+        if len(pdf_files_subdir) > 0:
+            print(f"✅ Found {len(pdf_files_subdir)} PDF files in PDFs/ subdirectory")
+        elif len(pdf_files_root) > 0:
+            print(f"✅ Found {len(pdf_files_root)} PDF files in root directory")
+        else:
+            print("⚠️  No PDF files found, but proceeding with input.json (PDFs may be auto-located)")
+    else:
+        # Legacy format validation
+        if total_pdfs == 0:
+            print("❌ No PDF files found in input directory or PDFs/ subdirectory")
+            print("💡 For Round 1B format: Place input.json in /input and PDFs in /input/PDFs/")
+            print("💡 For legacy format: Place PDFs and corresponding JSONs directly in /input")
+            return 1
+            
+        if len(json_files) == 0:
+            print("❌ No JSON files found in input directory")
+            print("💡 Make sure you have input.json (Round 1B) or Round 1A JSON outputs for your PDFs")
+            return 1
     
     # Process Round 1B
     success = process_round1b(input_dir, output_dir)

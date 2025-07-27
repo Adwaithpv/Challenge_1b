@@ -495,9 +495,9 @@ class Round1BDocumentIntelligence:
                               job: str, pdf_paths: List[str]) -> Dict[str, Any]:
         """Construct the final JSON output according to Round 1B required format."""
         
-        # Create extracted sections array (EXACT required format)
+        # Create extracted sections array (EXACT required format) - TOP 5 ONLY
         extracted_sections = []
-        for section in ranked_sections:
+        for section in ranked_sections[:5]:  # Only include top 5 most important sections
             extracted_section = {
                 "document": section['source_document'],
                 "section_title": section['section_title'], 
@@ -634,6 +634,9 @@ class Round1BDocumentIntelligence:
 
 def main():
     """Main entry point for Round 1B solution."""
+    # Start timing the entire process
+    main_start_time = time.time()
+    
     parser = argparse.ArgumentParser(description='Round 1B: Persona-Driven Document Intelligence')
     parser.add_argument('--input-json', type=str,
                        help='Input JSON file with required format (preferred method)')
@@ -649,6 +652,9 @@ def main():
                        help='Directory for model cache')
     
     args = parser.parse_args()
+    
+    print("🚀 Starting Round 1B: Persona-Driven Document Intelligence")
+    print("=" * 60)
     
     # Initialize Round 1B system
     system = Round1BDocumentIntelligence(model_cache_dir=args.model_cache)
@@ -700,14 +706,43 @@ def main():
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
         
-        print(f"Round 1B processing completed successfully!")
-        print(f"Output saved to: {output_path}")
-        print(f"Processed {len(result['metadata']['input_documents'])} documents")
-        print(f"Found {len(result['extracted_sections'])} sections")
-        print(f"Generated {len(result['subsection_analysis'])} summaries")
+        # Calculate total execution time
+        total_time = time.time() - main_start_time
+        
+        print()
+        print("✅ Round 1B Processing Completed Successfully!")
+        print("=" * 60)
+        print(f"📊 Final Results:")
+        print(f"   • Documents processed: {len(result['metadata']['input_documents'])}")
+        print(f"   • Total sections analyzed: {len(result['extracted_sections'])}")
+        print(f"   • Sections with refined text: {len(result['subsection_analysis'])}")
+        print(f"   • Output saved to: {output_path}")
+        print()
+        print(f"⏱️  TOTAL EXECUTION TIME: {total_time:.2f} seconds")
+        print("=" * 60)
+        
+        # Performance evaluation
+        if total_time <= 60:
+            print(f"🎉 PERFORMANCE TARGET MET: {total_time:.2f}s ≤ 60s")
+        else:
+            print(f"⚠️  Performance target exceeded: {total_time:.2f}s > 60s")
+        
+        # Show top 3 most relevant sections
+        if result.get('extracted_sections'):
+            print(f"\n🏆 Top 3 Most Relevant Sections:")
+            for i, section in enumerate(result['extracted_sections'][:3]):
+                print(f"   {i+1}. '{section['section_title']}' from {section['document']} (Rank: {section['importance_rank']})")
+        
+        print()
         
     except Exception as e:
+        total_time = time.time() - main_start_time
+        print()
+        print("❌ Round 1B Processing Failed!")
+        print("=" * 60)
         print(f"Error: {e}")
+        print(f"⏱️  Time elapsed before failure: {total_time:.2f} seconds")
+        print("=" * 60)
         import traceback
         traceback.print_exc()
         return 1

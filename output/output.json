@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Learn Acrobat - Create and Convert_1.pdf",
+      "Learn Acrobat - Create and Convert_2.pdf",
+      "Learn Acrobat - Edit_1.pdf",
+      "Learn Acrobat - Edit_2.pdf",
+      "Learn Acrobat - Export_1.pdf",
+      "Learn Acrobat - Export_2.pdf",
+      "Learn Acrobat - Fill and Sign.pdf",
+      "Learn Acrobat - Generative AI_1.pdf",
+      "Learn Acrobat - Generative AI_2.pdf",
+      "Learn Acrobat - Request e-signatures_1.pdf",
+      "Learn Acrobat - Request e-signatures_2.pdf",
+      "Learn Acrobat - Share_1.pdf",
+      "Learn Acrobat - Share_2.pdf",
+      "Test Your Acrobat Exporting Skills.pdf",
+      "The Ultimate PDF Sharing Checklist.pdf"
+    ],
+    "persona": "HR professional",
+    "job_to_be_done": "Create and manage fillable forms for onboarding and compliance.",
+    "processing_timestamp": "2025-07-27T20:18:58.852006"
+  },
+  "extracted_sections": [
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "section_title": "To fill text fields:",
+      "importance_rank": 1,
+      "page_number": 2
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "section_title": "Fill in interactive forms",
+      "importance_rank": 2,
+      "page_number": 8
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "section_title": "Flat form",
+      "importance_rank": 3,
+      "page_number": 12
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "section_title": "8. Click Next in the upper right corner of the window.",
+      "importance_rank": 4,
+      "page_number": 13
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "section_title": "Advanced Options",
+      "importance_rank": 5,
+      "page_number": 4
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "refined_text": "You can \nmanually add text and other symbols anywhere on the form using the Fill & Sign tool if \nrequired. It displays the Fill & Sign tools in the left pane. Once you see a plus icon with arrows, move the textbox to the desired \nposition.",
+      "page_number": 2
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "refined_text": "Fill in interactive forms \nAn interactive form contains fields that you can select or fill in. If necessary, select either the Hand Tool or the Select Tool from the context menu of \nthe page (right-click on the page to open the context menu). The pointer changes to a different icon as you move it over a field.",
+      "page_number": 8
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "refined_text": "Acrobat and Acrobat Reader users can use the Fill & Sign tool \nto fill in flat forms. See Create a form from an existing \ndocument. The tools are enabled for the current form only.",
+      "page_number": 12
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "refined_text": "Click Next in the upper right corner of the window. Prepare the Agreement and Add Fields: \nYou can now add any necessary fields to the agreement. • \nAllows resizing of fields by clicking the bottom right corner of the field (blue \ntriangle) and dragging the field to size.",
+      "page_number": 13
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "refined_text": "• \nSimplified mode for single signer \nIf you've added one signer, the Advanced Editing mode is off, and you see the \nsimplified option as shown below. Alternatively, \ndrag fields from the tabs in the right pane and drop the fields where desired in the \ndocument. You receive an email from Acrobat Sign stating that the agreements have been sent to the \nfirst signer for signature.",
+      "page_number": 4
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "refined_text": "Add a file: \nUpload (by search or drag-and-drop) the primary file that you are using to build \nyour agreement template. The initial file selected to start the agreement template is already attached. Edit the Agreement settings (Optional): \nBy default, agreements do not require a password to view the completed agreement, \nnor do they have reminders set for participants \n• \nSelect Add access password if you require recipients to enter a password to \nopen and view the signed PDF file.",
+      "page_number": 9
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "refined_text": "The left pane provides information on getting signatures from others \nworkflow. Request signatures – Add Cc, subject, message, More Options \n• \nIf you don't want to use the More Options, skip the next optional step. • \nSpecify authentication type like Email, Password, Social Identity, Knowledge-\nBased Authentication, Phone, or Acrobat Sign.",
+      "page_number": 2
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "refined_text": "Choose an appropriate printer in the Print dialog box. This option prints text that you’ve typed using the Add \nText tool. • \n(Interactive or flat form) To print the form, the typed entries, and any \ncomments on the form, choose Document And Markups.",
+      "page_number": 14
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "refined_text": "As an admin, you must add users to the Admin Console using one of the methods described \nin Adobe Admin Console users. For more information, see Packaging apps via \nthe Admin Console. Once you assign AI Assistant for Acrobat, the users must restart Acrobat \nto see AI Assistant.",
+      "page_number": 18
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "refined_text": "When documents are distributed \nelectronically, it's important that recipients can: \n• \nVerify document authenticity—confirming the identity of each person who signed the \ndocument \n• \nVerify document integrity—confirming that the document has not been altered in \ntransit \nCertificate-based signatures provide both of these security services. They use third-party certificate authorities to provide independent identity \nvalidation. Once certificate-based digital IDs have been provided to end users, they can \nuse Acrobat or Acrobat Reader software to sign PDF files and validate files they receive from \nothers.",
+      "page_number": 20
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "title": "Edit text in a PDF",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Set the default font for adding and editing text",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Change, replace, or delete text",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "4. Select any area outside the selection to deselect it, and start over.",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Format text",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Formatting options on the left pane",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Add new text",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Move, rotate, or resize a text box",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Add or edit lists",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "Change font color",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "Change font",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Change font size",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Redo text in Acrobat",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Undo text in Acrobat",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Change paragraph spacing",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Edit images or objects in a PDF",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "About editing text and images",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "Add images in a PDF 1. Open the PDF in Acrobat. Select",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "Modify images in a PDF",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "Delete images from a PDF",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Add Objects to PDF",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Edit an image outside Acrobat",
+      "page": 16
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 1058.09765625,
+      "vms_mb": 4133.4296875,
+      "percent": 9.138481789933229
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Learn Acrobat - Edit_1.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T20:18:18.667485",
+  "processing_time_seconds": 1.96
+}
