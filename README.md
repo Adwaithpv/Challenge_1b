@@ -36,7 +36,7 @@ The recommended way to run this solution is by using the provided Docker contain
 First, build the Docker image using the following command from the root of the project directory:
 
 ```bash
-docker build -t round1b-solution .
+docker build --platform linux/amd64 -t round1b-solution .
 ```
 
 This command will create a Docker image named `round1b-solution` and pre-download the necessary models into the image, allowing for offline execution.
@@ -45,18 +45,17 @@ This command will create a Docker image named `round1b-solution` and pre-downloa
 
 The Docker container expects the input files to be mounted to the `/app/input` directory. You will need to create an `input` directory and populate it with the required files:
 
--   The PDF documents to be analyzed.
--   The corresponding `.json` files from the Round 1A analysis.
--   An `input.json` file that specifies the user persona, job-to-be-done, and the list of documents to process.
+-   A `PDFs` subdirectory containing the PDF documents to be analyzed.
+-   The corresponding `.json` files from the Round 1A analysis, located in the root of the `input` directory.
+-   An `input.json` file that specifies the user persona, job-to-be-done, and the list of documents to process, also in the root of the `input` directory.
 
 The structure of the `input` directory should be as follows:
 
 ```
 input/
-├── document1.pdf
-├── document1.json
-├── document2.pdf
-├── document2.json
+├── PDFs/
+│   ├── document1.pdf
+│   └── document2.pdf
 └── input.json
 ```
 
