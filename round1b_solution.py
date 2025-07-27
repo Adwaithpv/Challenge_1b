@@ -37,6 +37,11 @@ import logging
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
+# Force offline mode for transformers and sentence-transformers
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"  
+os.environ["HF_DATASETS_OFFLINE"] = "1"
+
 # Add src to path for imports (matching existing structure)
 sys.path.append('src')
 sys.path.append('.')
@@ -89,10 +94,25 @@ class Round1BDocumentIntelligence:
         """Load the embedding model and summarizer with model reuse optimization."""
         if self.embedding_model is None:
             self.logger.info(f"Loading embedding model: {self.model_name}")
-            self.embedding_model = SentenceTransformer(
-                self.model_name, 
-                cache_folder=self.model_cache_dir
+            
+            # Use local model path for offline execution
+            local_model_path = os.path.join(
+                self.model_cache_dir, 
+                "models--sentence-transformers--all-MiniLM-L6-v2",
+                "snapshots",
+                "c9745ed1d9f207416be6d2e6f8de32d1f16199bf"
             )
+            
+            # Check if local model exists, fallback to model name if not
+            if os.path.exists(local_model_path):
+                self.logger.info(f"Using local model from: {local_model_path}")
+                self.embedding_model = SentenceTransformer(local_model_path)
+            else:
+                self.logger.info(f"Local model not found, using model name: {self.model_name}")
+                self.embedding_model = SentenceTransformer(
+                    self.model_name, 
+                    cache_folder=self.model_cache_dir
+                )
             
         if self.summarizer is None:
             self.logger.info("Initializing extractive summarizer")
