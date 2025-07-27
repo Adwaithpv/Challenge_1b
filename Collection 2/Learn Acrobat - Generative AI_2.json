@@ -1,0 +1,124 @@
+{
+  "title": "Persistent chat history",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Clear chat history",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Copy chat history",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "Read-aloud generated responses",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Change the playback speed",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Custom voice for read-aloud feature",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Multiple document support in AI Assistant",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Remove files from a collection",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Request access in Acrobat",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Select Get access",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Request access from the Admin Console (Teams hybrid admins)",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "Review the status of your request",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Common questions",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "What happens if my request is declined?",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Administer AI Assistant for enterprises",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Prerequisites",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "License deployment",
+      "page": 18
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 803.05859375,
+      "vms_mb": 1533.9453125,
+      "percent": 3.374830546843271
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Learn Acrobat - Generative AI_2.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T19:22:51.438305",
+  "processing_time_seconds": 1.22
+}

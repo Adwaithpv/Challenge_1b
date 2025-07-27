@@ -1,0 +1,144 @@
+{
+  "title": "Renumber pages in a PDF",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Edit Scanned PDFs",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "Recognize text on scanned PDF",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "Edit a scanned document",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Enhance scanned file or camera images for clear PDFs",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Enhance camera image",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Split multiple PDFs",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "File Size",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Top-level Bookmarks",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Move or copy pages in a PDF",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Move or copy a page",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Copy a page between two PDFs",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Delete or replace pages in a PDF",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Extract pages from a PDF",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Extract random pages from a PDF",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Split PDFs into multiple documents",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Number of pages",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "File Size",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Top-level Bookmarks",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Export PDF images to another format",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Rotate, move, delete, extract, or renumber pages in a PDF",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Rotate pages in a PDF",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Delete a page in a PDF",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Replace pages in a PDF",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Replace pages between multiple PDFs",
+      "page": 11
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 768.234375,
+      "vms_mb": 1510.8515625,
+      "percent": 3.228482773315753
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Learn Acrobat - Edit_2.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T19:22:43.029552",
+  "processing_time_seconds": 1.52
+}

@@ -1,0 +1,504 @@
+{
+  "title": "Export",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Save a PDF",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Recover the last saved version",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "About the Autosave feature",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Set up automatic saving",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Recover lost changes after an unexpected shutdown",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to DOCX",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to DOC",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to PPTX",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "File format opï¿½ons for PDF export in Acrobat",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Adobe PDF options",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Image conversion settings",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "File settings",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Color management",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "Conversion",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "RGB/CMYK/Grayscale",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "Colorspace/Resolution",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "Note:",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "Note:",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "File settings",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Interlace",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Color management",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Conversion",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "RGB/Grayscale",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Colorspace/Resolution",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Note:",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "File settings",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Monochrome",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Color management",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Conversion",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "RGB/CMYK/Grayscale/Other",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Colorspace/Resolution",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "Note:",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Comments Settings",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Image Settings",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "PDF to Microsoï¿½ Word conversion seï¿½ngs",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to RTF",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "Comments Settings",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "PDF to RTF conversion seï¿½ngs",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to HTML Web Page",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "PDF to HTML conversion seï¿½ngs",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Text recogniï¿½on seï¿½ngs",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Recognize Text If Needed",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Set Language",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Single html page",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Multiple html pages",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Content seï¿½ngs",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to Microsoï¿½ Excel",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to Microsoft Excel (XLSX) 1. Open the PDF in Acrobat.",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to XML 1. Open the PDF in Acrobat.",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "Excel Workbook Settings",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Numeric Settings",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Text recogniï¿½on seï¿½ngs",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "4. Select Convert to XML .",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Set Language",
+      "page": 19
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to PostScript or Encapsulated PostScript (EPS)",
+      "page": 20
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 20
+    },
+    {
+      "level": "H1",
+      "text": "PostScript",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "Font Inclusion",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "Include Comments",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "Include Preview",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "Page Range",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "PDF to PS and EPS conversion seï¿½ngs",
+      "page": 21
+    },
+    {
+      "level": "H3",
+      "text": "ASCII or Binary",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to Text and XML 1.0",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to XML 1.0",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to text",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "Output file settings",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "Encoding",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "Generate Bookmarks",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Generate Tags For Untagged Files",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Image file settings",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Generate Images",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Use Sub-Folder",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Use Prefix",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Output Format",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Downsample To",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to TIFF",
+      "page": 24
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to JPEG or JPEG 2000",
+      "page": 24
+    },
+    {
+      "level": "H1",
+      "text": "Convert PDF to PNG 1. Open the PDF in Acrobat.",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "Overview",
+      "page": 26
+    },
+    {
+      "level": "H1",
+      "text": "Export images from PDFs",
+      "page": 26
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 26
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 26
+    },
+    {
+      "level": "H1",
+      "text": "7. Select Save .",
+      "page": 27
+    },
+    {
+      "level": "H1",
+      "text": "Select and copy text and images",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "Select text and images",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "Select a column of text",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 28
+    },
+    {
+      "level": "H1",
+      "text": "Paste copied text and images 1. Open the PDF in which you want to paste the selected text or image.",
+      "page": 29
+    },
+    {
+      "level": "H1",
+      "text": "Convert selected content to other formats",
+      "page": 30
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 764.94921875,
+      "vms_mb": 1491.78515625,
+      "percent": 3.2146769990547726
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Learn Acrobat - Export_1.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T19:22:45.599155",
+  "processing_time_seconds": 2.57
+}

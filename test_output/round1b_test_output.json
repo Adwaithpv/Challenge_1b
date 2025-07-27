@@ -1,0 +1,915 @@
+{
+  "persona": "PhD Researcher",
+  "job_to_be_done": "Prepare a comprehensive literature review on educational policy",
+  "documents_processed": [
+    "50_pg.pdf",
+    "NEP.pdf"
+  ],
+  "total_sections_analyzed": 123,
+  "extracted_sections": [
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "National Textbooks with Local Content and Flavour",
+      "start_page": 18,
+      "importance_rank": 1,
+      "relevance_score": 0.8999
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 32,
+      "importance_rank": 2,
+      "relevance_score": 0.8967
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "1. Early Childhood Care and Education: The Foundation of Learning",
+      "start_page": 8,
+      "importance_rank": 3,
+      "relevance_score": 0.8933
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "3)  Analyze  Performance  Data",
+      "start_page": 36,
+      "importance_rank": 4,
+      "relevance_score": 0.8916
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Previous Policies",
+      "start_page": 5,
+      "importance_rank": 5,
+      "relevance_score": 0.8911
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "23. Technology Use and Integration",
+      "start_page": 57,
+      "importance_rank": 6,
+      "relevance_score": 0.8798
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "13. Motivated, Energized, and Capable Faculty",
+      "start_page": 41,
+      "importance_rank": 7,
+      "relevance_score": 0.8759
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "27. Implementation",
+      "start_page": 62,
+      "importance_rank": 8,
+      "relevance_score": 0.8751
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 31,
+      "importance_rank": 9,
+      "relevance_score": 0.8706
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "10. Institutional Restructuring and Consolidation",
+      "start_page": 35,
+      "importance_rank": 10,
+      "relevance_score": 0.8668
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "20. Professional Education",
+      "start_page": 51,
+      "importance_rank": 11,
+      "relevance_score": 0.8494
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Principles of this Policy",
+      "start_page": 5,
+      "importance_rank": 12,
+      "relevance_score": 0.8461
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Recruitment and Deployment",
+      "start_page": 21,
+      "importance_rank": 13,
+      "relevance_score": 0.8374
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Professional Standards for Teachers",
+      "start_page": 23,
+      "importance_rank": 14,
+      "relevance_score": 0.8357
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "How  Content  Marketing  Fits  into  Your  Digital Marketing  Strategy",
+      "start_page": 50,
+      "importance_rank": 15,
+      "relevance_score": 0.8355
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "1.   They   do   not   have   sufficient   knowledge 2.   They   do   not   have   enough    time",
+      "start_page": 6,
+      "importance_rank": 16,
+      "relevance_score": 0.8333
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Approach to Teacher Education",
+      "start_page": 24,
+      "importance_rank": 17,
+      "relevance_score": 0.8318
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "7. Efficient Resourcing and Effective Governance through School Complexes/Clusters",
+      "start_page": 29,
+      "importance_rank": 18,
+      "relevance_score": 0.8303
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: EMAIL  AUTOMATION",
+      "start_page": 46,
+      "importance_rank": 19,
+      "relevance_score": 0.8293
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "National Curriculum Framework for School Education (NCFSE)",
+      "start_page": 18,
+      "importance_rank": 20,
+      "relevance_score": 0.8267
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "Here’s  What  You  Need  to  Know  in  Order  to  Be Successful",
+      "start_page": 32,
+      "importance_rank": 21,
+      "relevance_score": 0.8128
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: EMAIL  AUTOMATION",
+      "start_page": 47,
+      "importance_rank": 22,
+      "relevance_score": 0.8103
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "Promotion",
+      "start_page": 27,
+      "importance_rank": 23,
+      "relevance_score": 0.803
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  EMAIL  MARKETING",
+      "start_page": 26,
+      "importance_rank": 24,
+      "relevance_score": 0.8023
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 29,
+      "importance_rank": 25,
+      "relevance_score": 0.7943
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Experiential learning",
+      "start_page": 13,
+      "importance_rank": 26,
+      "relevance_score": 0.7911
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: REMARKETING",
+      "start_page": 41,
+      "importance_rank": 27,
+      "relevance_score": 0.7849
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Support for Gifted Students/Students with Special Talents",
+      "start_page": 20,
+      "importance_rank": 28,
+      "relevance_score": 0.7785
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: EMAIL  AUTOMATION",
+      "start_page": 49,
+      "importance_rank": 29,
+      "relevance_score": 0.7774
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "Long-­Term  Social  Media  Marketing  Strategy to  Increase  Sales",
+      "start_page": 19,
+      "importance_rank": 30,
+      "relevance_score": 0.7727
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  SOCIAL  MEDIA",
+      "start_page": 20,
+      "importance_rank": 31,
+      "relevance_score": 0.7649
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 36,
+      "importance_rank": 32,
+      "relevance_score": 0.7552
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Multilingualism and the power of language",
+      "start_page": 14,
+      "importance_rank": 33,
+      "relevance_score": 0.7456
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: BUILD  LONG-­TERM  ASSETS",
+      "start_page": 18,
+      "importance_rank": 34,
+      "relevance_score": 0.7376
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "LYFE  MARKETING: MEET  THE  PUBLISHER",
+      "start_page": 2,
+      "importance_rank": 35,
+      "relevance_score": 0.7356
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "1) Analyze  Relevance  Score",
+      "start_page": 35,
+      "importance_rank": 36,
+      "relevance_score": 0.7291
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "Long-­Term  SEO  Marketing  Strategy",
+      "start_page": 23,
+      "importance_rank": 37,
+      "relevance_score": 0.728
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  EMAIL  MARKETING",
+      "start_page": 27,
+      "importance_rank": 38,
+      "relevance_score": 0.7223
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "2)  Maximize  Organic  Opportunities",
+      "start_page": 21,
+      "importance_rank": 39,
+      "relevance_score": 0.7157
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  1: INTRODUCTION",
+      "start_page": 7,
+      "importance_rank": 40,
+      "relevance_score": 0.7155
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Introduction",
+      "start_page": 4,
+      "importance_rank": 41,
+      "relevance_score": 0.706
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  2: BUILD  CUSTOMER  AVATAR",
+      "start_page": 11,
+      "importance_rank": 42,
+      "relevance_score": 0.7008
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "2. Foundational Literacy and Numeracy: An Urgent & Necessary Prerequisite to Learning",
+      "start_page": 9,
+      "importance_rank": 43,
+      "relevance_score": 0.7004
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  2: BUILD  CUSTOMER  AVATAR",
+      "start_page": 14,
+      "importance_rank": 44,
+      "relevance_score": 0.6962
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  1: INTRODUCTION",
+      "start_page": 6,
+      "importance_rank": 45,
+      "relevance_score": 0.6837
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  EMAIL  MARKETING",
+      "start_page": 28,
+      "importance_rank": 46,
+      "relevance_score": 0.6818
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  2: BUILD  CUSTOMER  AVATAR",
+      "start_page": 16,
+      "importance_rank": 47,
+      "relevance_score": 0.6807
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Continuous Professional Development (CPD)",
+      "start_page": 23,
+      "importance_rank": 48,
+      "relevance_score": 0.6774
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "18. Transforming the Regulatory System of Higher Education",
+      "start_page": 47,
+      "importance_rank": 49,
+      "relevance_score": 0.6722
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "Here’s  how  this  works",
+      "start_page": 31,
+      "importance_rank": 50,
+      "relevance_score": 0.6703
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "3. Curtailing Dropout Rates and Ensuring Universal Access to Education at All Levels",
+      "start_page": 11,
+      "importance_rank": 51,
+      "relevance_score": 0.6674
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Internationalization",
+      "start_page": 40,
+      "importance_rank": 52,
+      "relevance_score": 0.6636
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Reduce curriculum content to enhance essential learning and critical thinking",
+      "start_page": 13,
+      "importance_rank": 53,
+      "relevance_score": 0.6614
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "24. Online and Digital Education:  Ensuring Equitable Use of Technology",
+      "start_page": 59,
+      "importance_rank": 54,
+      "relevance_score": 0.6555
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "PART IV.  MAKING IT HAPPEN",
+      "start_page": 3,
+      "importance_rank": 55,
+      "relevance_score": 0.6554
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "2)  Analyze  Audiences",
+      "start_page": 36,
+      "importance_rank": 56,
+      "relevance_score": 0.6498
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "The Vision of this Policy",
+      "start_page": 7,
+      "importance_rank": 57,
+      "relevance_score": 0.6495
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  SOCIAL  MEDIA",
+      "start_page": 21,
+      "importance_rank": 58,
+      "relevance_score": 0.6473
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Curricular Integration of Essential Subjects, Skills, and Capacities",
+      "start_page": 16,
+      "importance_rank": 59,
+      "relevance_score": 0.6371
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: CONTENT  MARKETING",
+      "start_page": 50,
+      "importance_rank": 60,
+      "relevance_score": 0.6264
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "4.  Curriculum  and  Pedagogy  in  Schools:  Learning  Should  be  Holistic,  Integrated, Enjoyable, and Engaging",
+      "start_page": 12,
+      "importance_rank": 61,
+      "relevance_score": 0.624
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "INTRODUCTION………………………………………..4 BUILDING  YOUR  CUSTOMER  AVATAR………….11 DEVELOPING  “LONG-­TERM”  ASSETS……………17 SHORT-­TERM  AD  STRATEGIES…………………….29",
+      "start_page": 3,
+      "importance_rank": 62,
+      "relevance_score": 0.6237
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "22. Promotion of Indian Languages, Arts, and Culture",
+      "start_page": 54,
+      "importance_rank": 63,
+      "relevance_score": 0.6225
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "You   must   set   realistic   expectations.",
+      "start_page": 34,
+      "importance_rank": 64,
+      "relevance_score": 0.6026
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  SEO",
+      "start_page": 23,
+      "importance_rank": 65,
+      "relevance_score": 0.6023
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  1: INTRODUCTION",
+      "start_page": 4,
+      "importance_rank": 66,
+      "relevance_score": 0.5655
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "21. Adult Education and Lifelong Learning",
+      "start_page": 52,
+      "importance_rank": 67,
+      "relevance_score": 0.5566
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  SEO",
+      "start_page": 24,
+      "importance_rank": 68,
+      "relevance_score": 0.5554
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Career Management and Progression (CMP)",
+      "start_page": 23,
+      "importance_rank": 69,
+      "relevance_score": 0.5551
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "Lead  Magnet",
+      "start_page": 26,
+      "importance_rank": 70,
+      "relevance_score": 0.549
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 38,
+      "importance_rank": 71,
+      "relevance_score": 0.5384
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "19. Effective Governance and Leadership for Higher Education Institutions",
+      "start_page": 50,
+      "importance_rank": 72,
+      "relevance_score": 0.5377
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "14. Equity and Inclusion in Higher Education",
+      "start_page": 42,
+      "importance_rank": 73,
+      "relevance_score": 0.537
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: LEAD  NURTURING",
+      "start_page": 39,
+      "importance_rank": 74,
+      "relevance_score": 0.5362
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Transforming Assessment for Student Development",
+      "start_page": 18,
+      "importance_rank": 75,
+      "relevance_score": 0.5323
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  1: INTRODUCTION",
+      "start_page": 5,
+      "importance_rank": 76,
+      "relevance_score": 0.5191
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: LEAD  NURTURING",
+      "start_page": 40,
+      "importance_rank": 77,
+      "relevance_score": 0.5011
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  EMAIL  MARKETING",
+      "start_page": 25,
+      "importance_rank": 78,
+      "relevance_score": 0.4974
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Abbreviations",
+      "start_page": 64,
+      "importance_rank": 79,
+      "relevance_score": 0.4954
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "6. Equitable and Inclusive Education: Learning for All",
+      "start_page": 25,
+      "importance_rank": 80,
+      "relevance_score": 0.4934
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "How  Email  Automation  Fits  into  Your  Digital Marketing  Strategy",
+      "start_page": 45,
+      "importance_rank": 81,
+      "relevance_score": 0.4847
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "24.5  Creating  a  Dedicated  Unit  for  Building  of  World  Class,  Digital  Infrastructure, Educational Digital Content and Capacity",
+      "start_page": 61,
+      "importance_rank": 82,
+      "relevance_score": 0.4832
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Holistic development of learners",
+      "start_page": 13,
+      "importance_rank": 83,
+      "relevance_score": 0.4806
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "PART II.  HIGHER EDUCATION",
+      "start_page": 2,
+      "importance_rank": 84,
+      "relevance_score": 0.4792
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  1: STRATEGY  ROADMAP",
+      "start_page": 9,
+      "importance_rank": 85,
+      "relevance_score": 0.4748
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "26. Financing: Affordable and Quality Education for All",
+      "start_page": 61,
+      "importance_rank": 86,
+      "relevance_score": 0.4644
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 37,
+      "importance_rank": 87,
+      "relevance_score": 0.4498
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: EMAIL  AUTOMATION",
+      "start_page": 48,
+      "importance_rank": 88,
+      "relevance_score": 0.4457
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: REMARKETING",
+      "start_page": 42,
+      "importance_rank": 89,
+      "relevance_score": 0.4431
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "5. Teachers",
+      "start_page": 21,
+      "importance_rank": 90,
+      "relevance_score": 0.4418
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Part III. OTHER KEY AREAS OF FOCUS",
+      "start_page": 51,
+      "importance_rank": 91,
+      "relevance_score": 0.4387
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  2: BUILD  CUSTOMER  AVATAR",
+      "start_page": 12,
+      "importance_rank": 92,
+      "relevance_score": 0.4303
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "15. Teacher Education",
+      "start_page": 43,
+      "importance_rank": 93,
+      "relevance_score": 0.4264
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: BUILD  LONG-­TERM  ASSETS",
+      "start_page": 17,
+      "importance_rank": 94,
+      "relevance_score": 0.426
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "12. Optimal Learning Environments and Support for Students",
+      "start_page": 39,
+      "importance_rank": 95,
+      "relevance_score": 0.4254
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Special educators",
+      "start_page": 24,
+      "importance_rank": 96,
+      "relevance_score": 0.4152
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "17.  Catalysing  Quality  Academic  Research  in  All  Fields  through  a  new  National Research Foundation",
+      "start_page": 46,
+      "importance_rank": 97,
+      "relevance_score": 0.4115
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  SOCIAL  MEDIA",
+      "start_page": 19,
+      "importance_rank": 98,
+      "relevance_score": 0.3984
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "8. Standard-setting and Accreditation for School Education",
+      "start_page": 31,
+      "importance_rank": 99,
+      "relevance_score": 0.3934
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Financial support for students",
+      "start_page": 41,
+      "importance_rank": 100,
+      "relevance_score": 0.3929
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 34,
+      "importance_rank": 101,
+      "relevance_score": 0.391
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: REMARKETING",
+      "start_page": 43,
+      "importance_rank": 102,
+      "relevance_score": 0.3881
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 30,
+      "importance_rank": 103,
+      "relevance_score": 0.3825
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "How  Remarketing  Fits  into  Your  Strategy",
+      "start_page": 41,
+      "importance_rank": 104,
+      "relevance_score": 0.3801
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "9.  Quality  Universities  and  Colleges:  A  New  and  Forward-looking  Vision  for  India ’ s Higher Education System",
+      "start_page": 34,
+      "importance_rank": 105,
+      "relevance_score": 0.3793
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: REMARKETING",
+      "start_page": 44,
+      "importance_rank": 106,
+      "relevance_score": 0.3775
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Service Environment and Culture",
+      "start_page": 22,
+      "importance_rank": 107,
+      "relevance_score": 0.3737
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Part I. SCHOOL EDUCATION",
+      "start_page": 7,
+      "importance_rank": 108,
+      "relevance_score": 0.3702
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  3: LONG-­TERM  SOCIAL  MEDIA",
+      "start_page": 22,
+      "importance_rank": 109,
+      "relevance_score": 0.3614
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  5: EMAIL  AUTOMATION",
+      "start_page": 45,
+      "importance_rank": 110,
+      "relevance_score": 0.3447
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 35,
+      "importance_rank": 111,
+      "relevance_score": 0.3403
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Part IV. MAKING IT HAPPEN",
+      "start_page": 61,
+      "importance_rank": 112,
+      "relevance_score": 0.3336
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "2)  Analyze  your  competitors",
+      "start_page": 13,
+      "importance_rank": 113,
+      "relevance_score": 0.3322
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  1: STRATEGY  ROADMAP",
+      "start_page": 8,
+      "importance_rank": 114,
+      "relevance_score": 0.3299
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 33,
+      "importance_rank": 115,
+      "relevance_score": 0.3275
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Student Activity and Participation",
+      "start_page": 41,
+      "importance_rank": 116,
+      "relevance_score": 0.3263
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "Now,  here’s  the  key  takeaway.",
+      "start_page": 34,
+      "importance_rank": 117,
+      "relevance_score": 0.3258
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Curbing Commercialization of Education",
+      "start_page": 49,
+      "importance_rank": 118,
+      "relevance_score": 0.3247
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "16. Reimagining Vocational Education",
+      "start_page": 44,
+      "importance_rank": 119,
+      "relevance_score": 0.3196
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Empower students through flexibility in course choices",
+      "start_page": 14,
+      "importance_rank": 120,
+      "relevance_score": 0.3145
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  2: BUILD  CUSTOMER  AVATAR",
+      "start_page": 15,
+      "importance_rank": 121,
+      "relevance_score": 0.3099
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  2: BUILD  CUSTOMER  AVATAR",
+      "start_page": 13,
+      "importance_rank": 122,
+      "relevance_score": 0.3048
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "25. Strengthening the Central Advisory Board of Education",
+      "start_page": 61,
+      "importance_rank": 123,
+      "relevance_score": 0.3043
+    }
+  ],
+  "sub_section_analysis": [
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "National Textbooks with Local Content and Flavour",
+      "start_page": 18,
+      "importance_rank": 1,
+      "refined_text": "Mock summary for 'National Textbooks with Local Content and Flavour': This section covers key concepts and provides important insights."
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES",
+      "start_page": 32,
+      "importance_rank": 2,
+      "refined_text": "Mock summary for 'CHAPTER  4: [SHORT-­CUT]  AD  STRATEGIES': This section covers key concepts and provides important insights."
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "1. Early Childhood Care and Education: The Foundation of Learning",
+      "start_page": 8,
+      "importance_rank": 3,
+      "refined_text": "Mock summary for '1. Early Childhood Care and Education: The Foundation of Learning': This section covers key concepts and provides important insights."
+    },
+    {
+      "source_document": "50_pg.pdf",
+      "section_title": "3)  Analyze  Performance  Data",
+      "start_page": 36,
+      "importance_rank": 4,
+      "refined_text": "Mock summary for '3)  Analyze  Performance  Data': This section covers key concepts and provides important insights."
+    },
+    {
+      "source_document": "NEP.pdf",
+      "section_title": "Previous Policies",
+      "start_page": 5,
+      "importance_rank": 5,
+      "refined_text": "Mock summary for 'Previous Policies': This section covers key concepts and provides important insights."
+    }
+  ],
+  "processing_metadata": {
+    "processing_time_seconds": 15.2,
+    "model_used": "all-MiniLM-L6-v2",
+    "embedding_dimension": 384,
+    "timestamp": "2024-01-01T12:00:00"
+  }
+}

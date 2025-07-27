@@ -1,0 +1,309 @@
+{
+  "title": "Overview of generative AI features",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Benefits of generative AI features The generative AI features in Acrobat and Acrobat Reader significantly improve",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Turn off generative AI features The generative AI features in Acrobat and Acrobat Reader are turned on by default. However,",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "User Guidelines",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Attributions",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Feedback",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Content usage and handling practices",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Will adobe ever look at your content while youâ€™re using generative ai in acrobat and acrobat reader?",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "If you flag content as being harmful, illegal, or offensive or if you contribute content as feedback, how long do we retain that content?",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Do acrobatâ€™s generative ai features process my documents when i launch the application or open a file in the application?",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Managing chat history",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "What is chat history?",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "How can I see my chat history?",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "What LLMS are we leveraging to power generative ai in acrobat?",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Does adobe concurrently train any large language models (â€œLLMSâ€) with your content while you're using generative ai features in acrobat?",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Where is my chat history stored?",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Can I export my chat history in AI Assistant?",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Before You Begin",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "Get AI-generated answers",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "AI Assistant",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "Select multiple files",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Accessing chat history in Acrobat",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Get AI-generated overviews and summaries",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "Select Generative summary",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "Overview of the document",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "Streaming summaries for long PDFs",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "Acrobat",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Prerequisites",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Access Zoom meeting transcripts in Acrobat",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "Find and open Zoom transcripts",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Manually open meeting transcripts in Acrobat",
+      "page": 16
+    },
+    {
+      "level": "H1",
+      "text": "Select multiple files",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "Acrobat desktop",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "Acrobat online",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "Acrobat Desktop",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Acrobat online",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Use generative AI features in Acrobat Reader",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Access the generative AI tools from Acrobat Reader Home",
+      "page": 19
+    },
+    {
+      "level": "H1",
+      "text": "Access the generative AI tools when you open a document",
+      "page": 19
+    },
+    {
+      "level": "H1",
+      "text": "Like or dislike the response",
+      "page": 20
+    },
+    {
+      "level": "H1",
+      "text": "Provide feedback for what didnâ€™t work well",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "Report inappropriate content",
+      "page": 21
+    },
+    {
+      "level": "H1",
+      "text": "Report content",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "2. Choose from the options, or provide details in the text box. Then select Submit",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "Rate your experience with the generative AI features",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Rate the Generative AI features",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Turn off generative AI features in Acrobat or Acrobat Reader desktop",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "Turn off generative AI features in Acrobat on the web",
+      "page": 24
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "Note:",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "Get quick insights",
+      "page": 27
+    },
+    {
+      "level": "H1",
+      "text": "Provide feedback for generated answers",
+      "page": 30
+    },
+    {
+      "level": "H1",
+      "text": "Content references",
+      "page": 30
+    },
+    {
+      "level": "H1",
+      "text": "Turn off AI Assistant",
+      "page": 32
+    }
+  ],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 791.18359375,
+      "vms_mb": 1528.51953125,
+      "percent": 3.3249262023089297
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Learn Acrobat - Generative AI_1.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T19:22:50.214913",
+  "processing_time_seconds": 2.18
+}

@@ -1,0 +1,23 @@
+{
+  "title": "",
+  "outline": [],
+  "memory_optimization": {
+    "enabled": true,
+    "streaming_used": false,
+    "memory_usage": {
+      "rss_mb": 827.58203125,
+      "vms_mb": 1550.51953125,
+      "percent": 3.4778895846678095
+    },
+    "cache_stats": {
+      "total_items": 0,
+      "total_size_mb": 0.0,
+      "max_size_mb": 500.0,
+      "utilization": 0.0
+    }
+  },
+  "source_pdf": "Test Your Acrobat Exporting Skills.pdf",
+  "generated_by": "Round1A_OptimizedEngine",
+  "generation_time": "2025-07-27T19:22:59.264816",
+  "processing_time_seconds": 0.84
+}

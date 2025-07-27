@@ -1,0 +1,56 @@
+# Core ML and Deep Learning
+# torch and torchvision are installed separately in Dockerfile for CPU version
+lightgbm>=3.3.0
+numpy>=1.21.0,<1.25.0
+
+# Computer Vision (headless version for Docker)
+opencv-python-headless>=4.5.0
+
+# PDF Processing
+pdf2image>=1.17.0
+
+# Data Processing
+pydantic>=1.8.0
+lxml>=4.6.0
+pillow>=8.3.0
+
+# PDF and Document Processing
+pypandoc>=1.8.0
+
+# Additional Dependencies
+fvcore>=0.1.5
+omegaconf>=2.1.0
+pycocotools>=2.0.4
+
+# Performance and Memory Optimization
+psutil>=5.8.0
+PyMuPDF>=1.20.0
+
+# Additional dependencies for container stability
+wheel>=0.37.0
+setuptools>=58.0.0
+
+# Transformers for BROS model
+transformers>=4.0.0
+
+# Additional dependencies for robust operation
+easyocr>=1.6.0
+typing-extensions>=4.0.0
+
+# Formula and Table Extraction (optional)
+rapid-latex-ocr>=0.0.8  # Commented out - causes numpy build conflicts in Docker
+struct-eqtable==0.3.2   # NOT AVAILABLE - Custom package for table structure extraction
+
+# Additional utilities
+roman>=3.3
+tqdm>=4.62.0
+huggingface-hub>=0.10.0
+fastapi>=0.70.0
+
+# Round 1B Dependencies - Persona-Driven Document Intelligence
+sentence-transformers>=2.2.0
+bert-extractive-summarizer>=0.10.1
+scipy>=1.9.0
+
+# Note: torch, torchvision, and detectron2 are installed separately in Dockerfile
+# for optimal CPU compatibility 
