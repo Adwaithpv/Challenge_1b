@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
     libgomp1 \
     libgcc-s1 \
     git \
+    wget \
+    curl \
     # OpenCV dependencies
     libgl1-mesa-glx \
     libglib2.0-0 \
@@ -76,6 +78,13 @@ token_type_finding_config_path = hf_hub_download( \
 print(f'Downloaded to: {token_type_finding_config_path}'); \
 print('All models downloaded successfully!') \
 "
+RUN echo "Downloading LightGBM models from GitHub releases..." && \
+    # Download token_type_lightgbm.model
+    wget -O /app/models/token_type_lightgbm.model "https://github.com/Adwaithpv/Challenge_1a/releases/download/v1.0.0/token_type_lightgbm.model" && \
+    # Download paragraph_extraction_lightgbm.model
+    wget -O /app/models/paragraph_extraction_lightgbm.model "https://github.com/Adwaithpv/Challenge_1a/releases/download/v1.0.0/paragraph_extraction_lightgbm.model" && \
+    echo "LightGBM models downloaded successfully!" && \
+    ls -la /app/models/
 
 # Download Round 1B models for offline execution
 RUN python -c "\
