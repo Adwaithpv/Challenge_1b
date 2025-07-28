@@ -69,4 +69,9 @@ docker-compose*.yml
 # Local development
 *.local
 .env
-.env.local 
+.env.local
+
+# Model caches (exclude local model caches to prevent corruption during Docker build)
+models/models--*
+models/.huggingface/
+models/.locks/ 
