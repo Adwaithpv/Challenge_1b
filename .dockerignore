@@ -3,10 +3,6 @@
 .gitignore
 .gitattributes
 
-# Exclude large model files from Docker build context
-# These will be downloaded during build instead
-models/token_type_lightgbm.model
-models/paragraph_extraction_lightgbm.model
 # Documentation
 *.md
 !DOCKER_README.md

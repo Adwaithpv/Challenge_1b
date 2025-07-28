@@ -43,12 +43,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application code
 COPY . .
 
-# Ensure the local LightGBM model files are copied and accessible
-# These are critical for Round 1A processing within Round 1B
-COPY models/token_type_lightgbm.model /app/models/
-COPY models/paragraph_extraction_lightgbm.model /app/models/
-COPY models/config.json /app/models/
-
 # Create missing __init__.py files for all Python packages (this handles all directories safely)
 RUN find /app/src -type d -exec touch {}/__init__.py \;
 
